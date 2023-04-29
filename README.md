@@ -54,6 +54,19 @@ __init__(self, input_data, explanation_data): Initializes the Explanation object
 get_explanation_data(self): Returns the explanation data.
 get_input_data(self): Returns the input data.
 
+
+####  API Documentation
+* ExplanationGenerator: The main class for generating explanations.
+* explain(input_data): Generates an explanation for the given input data.
+* visualize_explanation(explanation): Visualizes the generated explanation.
+* Explanation: Represents an explanation for a given input.
+* get_input_data(): Returns the input data.
+* get_explanation_data(): Returns the explanation data.
+* ExplanationMethod: Abstract base class for all explanation methods.
+* LimeMethod: Implements the LIME explanation method.
+* ShapMethod: Implements the SHAP explanation method.
+* IntegratedGradientsMethod: Implements the Integrated Gradients explanation method.
+
 from aee_lib import ExplanationGenerator
 from aee_lib.methods import LimeMethod, ShapMethod
 from my_model import model
